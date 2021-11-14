@@ -1,0 +1,112 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(237, 76, 92, 0.61);
+  z-index: 2;
+
+  &__logo {
+    display: flex;
+    column-gap: 10px;
+
+    &-title {
+      @include font(18px, 22px);
+      font-style: normal;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      a{
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__nav {
+    &-menu {
+      display: flex;
+      column-gap: 30px;
+    }
+
+    &-link {
+      list-style-type: none;
+      @include font(14px, 17px);
+      font-style: normal;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+  }
+
+  &__form {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    &-button {
+      @include font(14px, 17px);
+      font-style: normal;
+      font-weight: normal;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      padding: 12px 30px;
+      border: 1px solid #FFFFFF;
+      box-sizing: border-box;
+      border-radius: 6px;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all .5s;
+
+      &:hover {
+        color: $primred;
+        background: #FFFFFF;
+      }
+    }
+  }
+
+
+
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .link{
+    margin-left: 20px;
+  }
+
+
+
+  .mobile-btn span{
+    height: 3px;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: relative;
+  }
+
+  .mobile-btn span::before,
+  .mobile-btn span::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+  }
+  .mobile-btn span::before{
+    top: -10px;
+  }
+  .mobile-btn span::after{
+    top: 10px;
+  }
+
+
+}
+.dd-selected-text{
+  @include font(14px, 60px);
+  color: #ffffff;
+  font-weight: 500;
+}

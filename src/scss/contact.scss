@@ -1,0 +1,98 @@
+.contact {
+
+  &__description {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 70px;
+
+    &-title {
+      @include font(36px, 43px);
+      font-style: normal;
+      font-weight: 600;
+      margin-top: -165px;
+    }
+
+    &-text {
+      @include font(14px, 140%);
+      font-style: normal;
+      font-weight: normal;
+      width: 430px;
+    }
+  }
+
+  &__form {
+
+    &-text {
+      padding: 20px 145px 20px 30px;
+      width: 48%;
+      border: 1px solid #333333;
+      border-radius: 6px;
+      outline: none;
+
+      &::placeholder {
+        @include font(16px, 19px);
+        font-style: normal;
+        font-weight: normal;
+        color: rgba(19, 39, 67, 0.5);
+      }
+    }
+    &-text2{
+      margin-left: 3%;
+    }
+
+    &-tel {
+      padding: 20px 400px 20px 30px;
+      width: 100%;
+      border: 1px solid #333333;
+      border-radius: 6px;
+      outline: none;
+      margin: 25px 0;
+
+      &::placeholder {
+        @include font(16px, 19px);
+        font-style: normal;
+        font-weight: normal;
+        color: rgba(19, 39, 67, 0.5);
+      }
+    }
+
+    &-select {
+      padding: 20px 380px 20px 30px;
+      width: 100%;
+      border: 1px solid #333333;
+      border-radius: 6px;
+      @include font(16px, 19px);
+      font-style: normal;
+      font-weight: normal;
+      color: rgba(19, 39, 67, 0.5);
+      outline: none;
+    }
+
+    &-button {
+      padding: 16px 34px;
+      @include font(14px, 17px);
+      font-style: normal;
+      font-weight: normal;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      background: $primred;
+      border: 1.5px solid $primred;
+      border-radius: 6px;
+      margin-top: 25px;
+      cursor: pointer;
+      transition: all .5s;
+      &:hover{
+        background-color: #ffffff;
+        color: $primred;
+      }
+    }
+  }
+
+&__content{
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+}
